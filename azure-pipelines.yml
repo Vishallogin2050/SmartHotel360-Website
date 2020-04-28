@@ -24,7 +24,7 @@ steps:
     resourceGroupName: 'RG3'
     location: 'West Europe'
     templateLocation: 'Linked artifact'
-    csmFile: 'C:\Users\testadmin\Downloads\ExportedTemplate-RG3\Templete.json'
+    csmFile: 'C:\Users\testadmin\Downloads\ExportedTemplate-RG3\template.json'
     deploymentMode: 'Incremental'
 
 - task: NuGetCommand@2
