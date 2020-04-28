@@ -10,8 +10,16 @@ pool:
   vmImage: 'ubuntu-latest'
 
 steps:
-- script: echo Hello, world!
-  displayName: 'Run a one-line script'
+- task: AzureResourceManagerTemplateDeployment@3
+  inputs:
+    deploymentScope: 'Resource Group'
+    azureResourceManagerConnection: 'TestSub1(c8c7208e-56c2-4d3b-9da3-9f9e7b6bce49)'
+    subscriptionId: 'c8c7208e-56c2-4d3b-9da3-9f9e7b6bce49'
+    action: 'Create Or Update Resource Group'
+    resourceGroupName: 'RG3'
+    location: 'Central India'
+    templateLocation: 'Linked artifact'
+    deploymentMode: 'Incremental'
 
 - script: |
     echo Add other tasks to build, test, and deploy your project.
