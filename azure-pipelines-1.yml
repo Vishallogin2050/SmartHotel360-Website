@@ -16,8 +16,8 @@ steps:
     azureResourceManagerConnection: 'TestSub1(c8c7208e-56c2-4d3b-9da3-9f9e7b6bce49)'
     subscriptionId: 'c8c7208e-56c2-4d3b-9da3-9f9e7b6bce49'
     templateLocation: 'Linked artifact'
-    csmFile: 'C:\Users\testadmin\Downloads\ExportedTemplate-RG3\template'
-    csmParametersFile: 'C:\Users\testadmin\Downloads\ExportedTemplate-RG3\parameter'
+    csmFile: 'C:\Users\testadmin\Downloads\ExportedTemplate-RG3\template.json'
+    csmParametersFile: 'C:\Users\testadmin\Downloads\ExportedTemplate-RG3\parameter.json'
     deploymentMode: 'Incremental'
 
 - script: |
