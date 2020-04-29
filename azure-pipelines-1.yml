@@ -17,8 +17,8 @@ steps:
     subscriptionId: '5a9f9434-58a6-4974-9fc5-8b721893674c'
     location: 'East US 2'
     templateLocation: 'Linked artifact'
-    csmFile: 'C:\Users\testadmin\Downloads\ExportedTemplate-RG2\template.json'
-    csmParametersFile: 'C:\Users\testadmin\Downloads\ExportedTemplate-RG2\parameters.json'
+    csmFile: 'C:\Users\testadmin\Downloads\ExportedTemplate-RG1\template.json'
+    csmParametersFile: 'C:\Users\testadmin\Downloads\ExportedTemplate-RG1\parameters.json'
     deploymentMode: 'Incremental'
 
 - script: |
