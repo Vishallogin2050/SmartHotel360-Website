@@ -18,7 +18,7 @@ steps:
     location: 'East US 2'
     templateLocation: 'Linked artifact'
     csmFile: 'C:\Users\testadmin\Downloads\ExportedTemplate-RG2\template.json'
-    csmParametersFile: 'C:\Users\testadmin\Downloads\ExportedTemplate-RG2\parameter.json'
+    csmParametersFile: 'C:\Users\testadmin\Downloads\ExportedTemplate-RG2\parameters.json'
     deploymentMode: 'Incremental'
 
 - script: |
