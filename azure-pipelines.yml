@@ -14,7 +14,18 @@ variables:
   buildPlatform: 'Any CPU'
   buildConfiguration: 'Release'
 
-
+- task: AzureResourceManagerTemplateDeployment@3
+  inputs:
+    deploymentScope: 'Resource Group'
+    azureResourceManagerConnection: 'TestSub2(5a9f9434-58a6-4974-9fc5-8b721893674c)'
+    subscriptionId: '5a9f9434-58a6-4974-9fc5-8b721893674c'
+    action: 'Create Or Update Resource Group'
+    resourceGroupName: 'RG4'
+    location: 'Central US'
+    templateLocation: 'Linked artifact'
+    csmFile: 'C:\Users\template.json'
+    csmParametersFile: 'C:\Users\parameters.json'
+    deploymentMode: 'Incremental'
 
 - task: NuGetCommand@2
   inputs:
