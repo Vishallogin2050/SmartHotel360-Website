@@ -4,10 +4,6 @@
 # Add steps that build, run tests, deploy, and more:
 # https://aka.ms/yaml
 
-trigger:
-- master
-
-
 
 - task: AzureResourceManagerTemplateDeployment@3
   inputs:
@@ -21,7 +17,6 @@ trigger:
     csmFile: 'c:\users\template.json'
     csmParametersFile: 'c:\users\parameters.json'
     deploymentMode: 'Incremental'
-
 - script: |
     echo Add other tasks to build, test, and deploy your project.
     echo See https://aka.ms/yaml
