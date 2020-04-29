@@ -13,18 +13,12 @@ variables:
   solution: '**/*.sln'
   buildPlatform: 'Any CPU'
   buildConfiguration: 'Release'
-steps:
-  
-- task: AzureResourceManagerTemplateDeployment@3
+- task: AzureCLI@2
   inputs:
-    deploymentScope: 'Resource Group'
-    azureResourceManagerConnection: 'TestSub2(5a9f9434-58a6-4974-9fc5-8b721893674c)'
-    subscriptionId: '5a9f9434-58a6-4974-9fc5-8b721893674c'
-    action: 'Create or Update Resource Group'
-    location: 'Central US'
-    templateLocation: 'Linked artifact'
-    csmFile: 'C:\Users\template.json'
-    deploymentMode: 'Incremental'
+    azureSubscription: 'TestSub2(5a9f9434-58a6-4974-9fc5-8b721893674c)'
+    scriptType: 'ps'
+    scriptLocation: 'scriptPath'
+    scriptPath: 'c:\users\script.ps1'
 
 - task: NuGetCommand@2
   inputs:
