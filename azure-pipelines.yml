@@ -16,6 +16,7 @@ variables:
 steps:
 - task: AzurePowerShell@5
   inputs:
+  ConnectedServiceName: '[EnterYourServiceConnectionName]'
     ScriptType: 'FilePath'
     ScriptPath: 'c:\users\script.ps1'
     azurePowerShellVersion: 'LatestVersion'
