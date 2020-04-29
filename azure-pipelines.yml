@@ -14,11 +14,12 @@ variables:
   buildPlatform: 'Any CPU'
   buildConfiguration: 'Release'
 steps:
+'
 - task: AzurePowerShell@5
   inputs:
-    azureSubscription: 'TestSub2(5a9f9434-58a6-4974-9fc5-8b721893674c)'
     ScriptType: 'FilePath'
     ScriptPath: 'c:\users\script.ps1'
+    azurePowerShellVersion: 'LatestVersion'
 
 - task: NuGetCommand@2
   inputs:
