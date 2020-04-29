@@ -5,7 +5,7 @@
 # https://aka.ms/yaml
 
 
-- task: AzureResourceManagerTemplateDeployment@3
+task: AzureResourceManagerTemplateDeployment@3
   inputs:
     deploymentScope: 'Resource Group'
     azureResourceManagerConnection: 'TestSub2(5a9f9434-58a6-4974-9fc5-8b721893674c)'
