@@ -4,9 +4,7 @@
 # Add steps that build, run tests, deploy, and more:
 # https://aka.ms/yaml
 
-Steps:
-
-task: AzureResourceManagerTemplateDeployment@3
+- task: AzureResourceManagerTemplateDeployment@3
   inputs:
     deploymentScope: 'Resource Group'
     azureResourceManagerConnection: 'TestSub2(5a9f9434-58a6-4974-9fc5-8b721893674c)'
@@ -15,8 +13,6 @@ task: AzureResourceManagerTemplateDeployment@3
     resourceGroupName: 'RG3'
     location: 'Central India'
     templateLocation: 'Linked artifact'
-    csmFile: 'c:\users\template.json'
-    csmParametersFile: 'c:\users\parameters.json'
     deploymentMode: 'Incremental'
 - script: |
     echo Add other tasks to build, test, and deploy your project.
