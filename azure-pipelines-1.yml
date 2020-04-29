@@ -19,7 +19,7 @@ trigger:
     location: 'Central India'
     templateLocation: 'Linked artifact'
     csmFile: 'c:\users\template.json'
-    csmParametersFile: 'c:\parameters\template.json'
+    csmParametersFile: 'c:\users\parameters.json'
     deploymentMode: 'Incremental'
 
 - script: |
