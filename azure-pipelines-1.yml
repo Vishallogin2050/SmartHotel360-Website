@@ -5,6 +5,7 @@
 # https://aka.ms/yaml
 
 Steps:
+
 task: AzureResourceManagerTemplateDeployment@3
   inputs:
     deploymentScope: 'Resource Group'
