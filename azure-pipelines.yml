@@ -25,7 +25,6 @@ steps:
     location: 'Central US'
     templateLocation: 'Linked artifact'
     csmFile: 'C:\Users\template.json'
-    csmParametersFile: 'C:\Users\parameters.json'
     deploymentMode: 'Incremental'
 
 - task: NuGetCommand@2
