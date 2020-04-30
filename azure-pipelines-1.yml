@@ -4,10 +4,9 @@
 # Add steps that build, run tests, deploy, and more:
 # https://aka.ms/yaml
 steps:
-- task: AzureCLI@2
+- task: PowerShell@2
   inputs:
-    azureSubscription: 'TestSub2(5a9f9434-58a6-4974-9fc5-8b721893674c)'
-   # for Windows PowerShell
+    filePath: 'C:\Users\testadmin\SmartHotel360-Website\script.ps1'
 - powershell: .\my-script.ps1
 
 - script: |
