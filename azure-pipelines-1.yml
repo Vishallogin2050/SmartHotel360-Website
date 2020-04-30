@@ -6,7 +6,7 @@
 steps:
 - task: PowerShell@2
   inputs:
-    filePath: '/home/vsts/work/1/s'
+    filePath: '/home/vsts/work/1/s/script.ps1'
 - powershell: 'script.ps1'
 
 - script: |
