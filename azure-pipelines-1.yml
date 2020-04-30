@@ -7,9 +7,8 @@ steps:
 - task: AzureCLI@2
   inputs:
     azureSubscription: 'TestSub2(5a9f9434-58a6-4974-9fc5-8b721893674c)'
-    scriptType: 'ps'
-    scriptLocation: 'scriptPath'
-    scriptPath: '.\script.ps1'
+   # for Windows PowerShell
+- powershell: .\my-script.ps1
 
 - script: |
     echo Add other tasks to build, test, and deploy your project.
