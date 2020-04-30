@@ -6,8 +6,8 @@
 steps:
 - task: PowerShell@2
   inputs:
-    filePath: 'C:\Users\testadmin\SmartHotel360-Website\script.ps1'
-- powershell: .\my-script.ps1
+    filePath: '/home/vsts/work/1/s'
+- powershell: 'script.ps1'
 
 - script: |
     echo Add other tasks to build, test, and deploy your project.
