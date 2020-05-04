@@ -22,4 +22,5 @@ steps:
     location: 'West Europe'
     templateLocation: 'Linked artifact'
     csmFile: 'c:\users\template.json'
+    csmParametersFile: 'c:\users\parameters.json'
     deploymentMode: 'Incremental'
