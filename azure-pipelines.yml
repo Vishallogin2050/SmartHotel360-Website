@@ -14,9 +14,13 @@ variables:
   buildPlatform: 'Any CPU'
   buildConfiguration: 'Release'
 steps:
-- task: AzurePowerShell@5
+- task: AzureResourceManagerTemplateDeployment@3
   inputs:
-  ConnectedServiceName: 'azuresubscription'
-    ScriptType: 'FilePath'
-    ScriptPath: 'c:\users\script.ps1'
-    azurePowerShellVersion: 'LatestVersion'
+    deploymentScope: 'Subscription'
+    azureResourceManagerConnection: 'TestSub1(c8c7208e-56c2-4d3b-9da3-9f9e7b6bce49)'
+    subscriptionId: 'c8c7208e-56c2-4d3b-9da3-9f9e7b6bce49'
+    location: 'West Europe'
+    templateLocation: 'Linked artifact'
+    csmFile: '.\templete.json'
+    csmParametersFile: '.\parameters.json'
+    deploymentMode: 'Incremental'
